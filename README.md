@@ -43,7 +43,7 @@ contains the following lines:
 <pre>
 node_modules
 dist
-\*.log
+*.log
 .sass-cache
 index.html
 </pre>
