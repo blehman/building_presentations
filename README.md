@@ -35,12 +35,20 @@ Answer a few questions and eventually you'll see the job finish:
 grunt
 </pre>
 
-##View presentation publically:
+##View presentation publicly:
 Bower is the front end dependency manager, but the bower files are
 ignored by github by default. So we need to remove `bower_components` from the
-.gitignore file before preceeding.
+.gitignore file before preceeding. Hence, my `.gitignore` file only
+contains the following lines:
+<pre>
+node_modules
+dist
+\*.log
+.sass-cache
+index.html
+</pre>
 
-#####view on gh-pages
+The following commands will allow you to *view the project on gh-pages*:
 <pre>
 git commit -am 'starting the presentation'
 git push
@@ -53,9 +61,9 @@ replacing *userName* and *repoName* with the appropriate values.
 
 ##Editing the presentation
 #####slides directory
-Contains two types of files:
-- list.json - this file is the order of the slides.
-- .md files - these files are the slides.  
+The `slides` directory contains two types of files:
+- `list.json` - this file is the order of the slides.
+- `.md` files - these files are the slides.  
 
 #####customization
 The index.html file is built by grunt from a template each time bower is
