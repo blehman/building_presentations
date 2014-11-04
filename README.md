@@ -5,9 +5,7 @@ Let's create an easily sharable presentation via gh-pages!
 
 To start, make sure that [node.js](http://nodejs.org/) is installed.
 ## Build scafolding: [Yeoman](http://yeoman.io/)
-I view Yeoman as an organized makefile of sorts that sets up dependencies in packages.json,
-bower.js, ect. When this generator runs, it bascially builds a scafolding for
-the presentation in reveal.js. 
+Yeoman is a tool that lets people share project generators for web applications. When this generator runs, it bascially builds a scafolding for the presentation in reveal.js. 
 
 First we need to install Yoeman.
 <pre>
