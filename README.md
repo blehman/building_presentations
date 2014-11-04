@@ -1,43 +1,44 @@
 Building Presentations
 ======================
 
-Helpful tools for creating easily sharable presentations. Make sure that [node.js](http://nodejs.org/) is installed.
-## [Yeoman](http://yeoman.io/)
-An organized makefile that sets up dependencies in packages.json,
-bower.js. When this generator runs, it bascially builds a scafolding for
+Together we're goig to create an easily sharable presentation via gh-pages. Make sure that [node.js](http://nodejs.org/) is installed.
+## Build scafolding: [Yeoman](http://yeoman.io/)
+I view Yeoman as an organized makefile of sorts that sets up dependencies in packages.json,
+bower.js, ect. When this generator runs, it bascially builds a scafolding for
 the presentation in reveal.js. 
 
+First we need to install Yoeman.
 <pre>
 npm install -g yo
 </pre>
 
-We need to install [Generator-reveal](https://www.npmjs.org/package/generator-reveal) that is js that turn markdown into a slide deck.
-
+We next need to install [Generator-reveal](https://www.npmjs.org/package/generator-reveal). Reveal allows us to turn markdown into a slide deck.
 <pre>
 npm install -g generator-reveal
+</pre>
+
+Finally, we run a simple command to execute Yeoman:
+<pre>
 yo
 </pre>
 
-insert photo: run_Reveal.png
+Choose reveal in the menu.  
+![](https://github.com/blehman/building_presentations/blob/master/imgs/run_Reveal.png?raw=true)
 
-####What are you going to talk about? 
-Title
-####What version should we put in the package.json file? 
-version
+Answer a few questions and eventually you'll see the job finish:   
+![](https://github.com/blehman/building_presentations/blob/master/imgs/job_Complete.png?raw=true)
 
-Insert photo: job_Compelte.png
-
-View the presentation:
+##View presentation locally:
 <pre>
 grunt
 </pre>
 
-## How to make this work on github pages
+##View presentation publically:
 Bower is the front end dependency manager, but the bower files are
 ignored by github by default. So we need to remove `bower_components` from the
-.gitignore file.
+.gitignore file before preceeding.
 
-####gh-pages
+#####view on gh-pages
 <pre>
 git commit -am 'starting the presentation'
 git push
@@ -45,21 +46,24 @@ git checkout -b gh-pages
 git push origin gh-pages
 </pre>
 
-Then visit [userName.git.io/repoName](userName.git.io/repoName)
-replacing userName and repoName with the appropriate values.
+Then visit [userName.github.io/repoName](userName.github.io/repoName)
+replacing *userName* and *repoName* with the appropriate values.
 
 ##Editing the presentation
-###slides directory
+#####slides directory
 Contains two types of files:
 - list.json - this file is the order of the slides.
 - .md files - these files are the slides.  
 
-###customization
-The index.html file is built by grunt from the template/\_index.html 
+#####customization
+The index.html file is built by grunt from a template each time bower is
+run, which means that you must edit `template/_index.html` to change
+the css.
 
-Many options exist for changing things such as the theme:
+Many options exist for changing the css such as the theme:
 - Go to `bower_components/reveal.js/css/theme/` and look at the options.
-  The starting theme is default.css.
+- The starting theme is `default.css`.
+- Edit `template/_index.html` with the desired theme.
 
 
 
