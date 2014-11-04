@@ -46,7 +46,7 @@ dist
 index.html
 </pre>
 
-The following commands will allow you to *view the project on gh-pages*:
+The following commands will allow you to **view the project on gh-pages**:
 <pre>
 git commit -am 'starting the presentation'
 git push
@@ -55,7 +55,7 @@ git push origin gh-pages
 </pre>
 
 Then visit [userName.github.io/repoName](userName.github.io/repoName)
-replacing *userName* and *repoName* with the appropriate values.
+replacing `userName` and `repoName` with the appropriate values.
 
 ##Editing the presentation
 #####slides directory
