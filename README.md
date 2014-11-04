@@ -75,5 +75,9 @@ Many options exist for changing the css such as the theme:
 - The starting theme is `default.css`.
 - Edit `template/_index.html` with the desired theme.
 
+##CREDIT
+Thank you [Erik Cunningham](https://github.com/trinary) for the
+instruction!
+
 
 
