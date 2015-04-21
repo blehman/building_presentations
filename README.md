@@ -15,6 +15,13 @@ npm install -g yo
 We next need to install [Generator-reveal](https://www.npmjs.org/package/generator-reveal). Reveal allows us to turn markdown into a slide deck.
 <pre>
 npm install -g generator-reveal
+</pre>  
+
+We install [grunt](http://gruntjs.com/) (similar to make - specifies how to build things and does file watching for auto detecting edits). We also install bower (a package manager for things that you sever as part of your website).  
+<pre>
+npm install -g grunt-cli
+npm -g install bower
+bower install
 </pre>
 
 Finally, we run a simple command to execute Yeoman:
