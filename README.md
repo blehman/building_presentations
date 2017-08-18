@@ -35,12 +35,12 @@ Choose reveal in the menu.
 Answer a few questions and eventually you'll see the job finish:   
 ![](https://github.com/blehman/building_presentations/blob/master/imgs/job_Complete.png?raw=true)
 
-##View presentation locally:
+## View presentation locally:
 <pre>
 grunt
 </pre>
 
-##View presentation publicly:
+## View presentation publicly:
 Bower is the front end dependency manager, but the bower files are
 ignored by github by default. So we need to remove `bower_components` from the
 .gitignore file before preceeding. Hence, my `.gitignore` file only
@@ -64,13 +64,13 @@ git push origin gh-pages
 Then visit [userName.github.io/repoName](userName.github.io/repoName)
 replacing `userName` and `repoName` with the appropriate values.
 
-##Editing the presentation
-#####slides directory
+## Editing the presentation
+##### slides directory
 The `slides` directory contains two types of files:
 - `list.json` - this file is the order of the slides.
 - `.md` files - these files are the slides.  
 
-#####customization
+##### customization
 The index.html file is built by grunt from a template each time bower is
 run, which means that you must edit `template/_index.html` to change
 the css.
@@ -80,7 +80,7 @@ Many options exist for changing the css such as the theme:
 - The starting theme is `default.css`.
 - Edit `template/_index.html` with the desired theme.
 
-##CREDIT
+## CREDIT
 Thank you [Erik Cunningham](https://github.com/trinary) for the
 instruction!
 
